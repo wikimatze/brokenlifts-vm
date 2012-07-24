@@ -1,5 +1,10 @@
 import "classes/*"
 
+package { "make":
+  ensure  => installed,
+  require => Exec['apt-update']
+}
+
 include vim
 include git
 include tig
