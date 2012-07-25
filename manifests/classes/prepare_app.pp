@@ -4,7 +4,7 @@ class prepare_app {
     cwd       => "/vagrant/brokenlift",
     command   => "/opt/vagrant_ruby/bin/bundle install",
     timeout   => 0,
-    require   => [ Class['git'], Class['gems'], Class['mysql'] ]
+    require   => [ Class['git'], Class['utility'], Class['gems'], Class['mysql'] ]
   }
 
 

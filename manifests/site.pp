@@ -1,10 +1,5 @@
 import "classes/*"
 
-package { "make":
-  ensure  => installed,
-  require => Exec['apt-update']
-}
-
 include vim
 include git
 include tig
@@ -15,4 +10,5 @@ include rubyracer
 include ruby
 include gems
 include prepare_app
+include utility
 
